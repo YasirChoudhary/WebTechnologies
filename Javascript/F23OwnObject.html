@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>creating our own object</title>
+
+	<script type="text/javascript">
+		
+		function person(name, age){
+			this.name = name;
+			this.age = age;
+		}
+
+		var yasir = new person("Yasir Choudhary", 22);
+		var allen = new person("allen robert", 21);
+
+	</script>
+
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		document.write(yasir.name+"<br>");
+		document.write(allen.name);
+
+	</script>
+
+</body>
+</html>
