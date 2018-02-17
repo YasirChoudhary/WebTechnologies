@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Adding methods to our objects</title>
+
+	<script type="text/javascript">
+		
+		function employee(name, age){
+			this.name = name;
+			this.age = age;
+			this.yearsLeftToRetire = yearsLeft;
+		}
+
+		function yearsLeft(){
+			var numYears = 65 - this.age;
+			return numYears;
+		}
+
+		var emp1 = new employee("Yasir",22);
+		var emp2 = new employee("Akhtar",22);
+
+	</script>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		document.write(emp2.name+"<br>");
+		document.write(emp2.age+"<br>")
+		document.write("yearsLeft "+emp2.yearsLeftToRetire());
+
+	</script>
+
+</body>
+</html>
