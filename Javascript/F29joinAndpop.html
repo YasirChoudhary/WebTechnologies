@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Array Methods</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+		
+		var fruits = new Array("Apple", "Mango", "Banana", "WaterMillon", "Grapes");
+
+		var string1 = fruits.join();	// join method converts array to string
+		document.write(string1+"<br>");
+
+		var string2 = fruits.join(" - "); // it replaces comma(,) by hyphen( - )
+		document.write(string2+"<br>");
+
+		document.write(fruits[4]+"<br>");
+		fruits.pop(); 						// it removes the last element from array
+		document.write(fruits[4]+"<br>");
+
+
+
+	</script>
+
+</body>
+</html>
